@@ -2,6 +2,7 @@ package dev.jason.gboardpatches.extension.accesspoint;
 
 import android.content.Context;
 import android.util.Log;
+import dev.jason.gboardpatches.extension.aibar.AiBarAccessPointContribution;
 import dev.jason.gboardpatches.extension.editingaccesspoints.GboardEditingAccessPointsContribution;
 
 import java.lang.reflect.Field;
@@ -44,6 +45,13 @@ public final class GboardAccessPointContributionsRuntime {
         } catch (Throwable failure) {
             logFailure("Editing buttons catalog contribution failed", failure);
         }
+        try {
+            if (hasFeature(context, GboardPatchesFeatureAvailability.FEATURE_AI_BAR)) {
+                result = AiBarAccessPointContribution.INSTANCE.extendOrderCatalog(context, result);
+            }
+        } catch (Throwable failure) {
+            logFailure("AI Bar catalog contribution failed", failure);
+        }
         return result;
     }
 
@@ -77,6 +85,13 @@ public final class GboardAccessPointContributionsRuntime {
             }
         } catch (Throwable failure) {
             logFailure("Editing buttons controller contribution failed", failure);
+        }
+        try {
+            if (hasFeature(context, GboardPatchesFeatureAvailability.FEATURE_AI_BAR)) {
+                AiBarAccessPointContribution.INSTANCE.register(controller, context);
+            }
+        } catch (Throwable failure) {
+            logFailure("AI Bar controller contribution failed", failure);
         }
     }
 

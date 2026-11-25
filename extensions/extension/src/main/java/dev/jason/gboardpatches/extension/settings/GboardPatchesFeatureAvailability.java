@@ -11,6 +11,8 @@ public final class GboardPatchesFeatureAvailability {
             "dev.jason.gboardpatches.feature.keypress_haptics";
     public static final String FEATURE_EDITING_ACCESS_POINTS =
             "dev.jason.gboardpatches.feature.editing_access_points";
+    public static final String FEATURE_AI_BAR =
+            "dev.jason.gboardpatches.feature.ai_bar";
     public static final String FEATURE_CLIPBOARD_ENHANCEMENTS =
             "dev.jason.gboardpatches.feature.clipboard_enhancements";
     public static final String FEATURE_CLIPBOARD_CONTENT_LIMIT =

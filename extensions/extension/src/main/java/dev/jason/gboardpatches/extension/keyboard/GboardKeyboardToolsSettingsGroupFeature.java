@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import dev.jason.gboardpatches.extension.R;
+import dev.jason.gboardpatches.extension.aibar.AiBarSettingsFeature;
 import dev.jason.gboardpatches.extension.editingaccesspoints.GboardEditingAccessPointsSettingsFeature;
 import dev.jason.gboardpatches.extension.calculator.GboardCalculatorSettingsFeature;
 import dev.jason.gboardpatches.extension.cursortrackpad.GboardCursorTrackpadSettingsFeature;
@@ -41,6 +42,7 @@ public final class GboardKeyboardToolsSettingsGroupFeature
                 GboardSettingsText.get(context,
                         R.string.gboard_patches_group_keyboard_empty_summary),
                 Arrays.asList(
+                        new AiBarSettingsFeature(context),
                         new GboardTopRowSwipeSettingsFeature(context),
                         new GboardManualIncognitoSettingsFeature(context),
                         new GboardLongPressQuickActionsSettingsFeature(context),

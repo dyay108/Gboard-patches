@@ -3840,4 +3840,316 @@
         <translation locale="en">Hold Shift and press Backspace to delete the character after the cursor, like the Delete key on a computer keyboard. Hold to repeat; releasing Shift restores backward deletion.</translation>
         <translation locale="zh-Hant">按住 Shift 再按退格鍵，會刪除游標右邊的字，作用等同電腦鍵盤的 Delete 鍵。長按可連續刪除，放開 Shift 後恢復向左刪除。</translation>
     </string>
+    <string name="gboard_ai_bar_title">
+        <translation locale="en">AI Bar</translation>
+        <translation locale="zh-Hant">AI Bar</translation>
+    </string>
+    <string name="gboard_ai_bar_summary">
+        <translation locale="en">AI buttons in the toolbar and text shortcuts that expand as you type.</translation>
+        <translation locale="zh-Hant">工具列中的 AI 按鈕，以及輸入時自動展開的文字快捷鍵。</translation>
+    </string>
+    <string name="gboard_ai_bar_toggle_summary">
+        <translation locale="en">Adds your AI buttons to the toolbar menu and expands your text shortcuts. Takes effect after the keyboard restarts.</translation>
+        <translation locale="zh-Hant">將 AI 按鈕加入工具列選單並展開文字快捷鍵。鍵盤重新啟動後生效。</translation>
+    </string>
+    <string name="gboard_ai_bar_section_feature">
+        <translation locale="en">Feature</translation>
+        <translation locale="zh-Hant">功能</translation>
+    </string>
+    <string name="gboard_ai_bar_section_provider">
+        <translation locale="en">AI provider</translation>
+        <translation locale="zh-Hant">AI 服務商</translation>
+    </string>
+    <string name="gboard_ai_bar_section_buttons">
+        <translation locale="en">Toolbar buttons</translation>
+        <translation locale="zh-Hant">工具列按鈕</translation>
+    </string>
+    <string name="gboard_ai_bar_section_shortcuts">
+        <translation locale="en">Text shortcuts</translation>
+        <translation locale="zh-Hant">文字快捷鍵</translation>
+    </string>
+    <string name="gboard_ai_bar_section_backup">
+        <translation locale="en">Backup</translation>
+        <translation locale="zh-Hant">備份</translation>
+    </string>
+    <string name="gboard_ai_bar_provider">
+        <translation locale="en">Provider</translation>
+        <translation locale="zh-Hant">服務商</translation>
+    </string>
+    <string name="gboard_ai_bar_provider_anthropic">
+        <translation locale="en">Anthropic (Claude)</translation>
+        <translation locale="zh-Hant">Anthropic（Claude）</translation>
+    </string>
+    <string name="gboard_ai_bar_provider_openai">
+        <translation locale="en">OpenAI-compatible endpoint</translation>
+        <translation locale="zh-Hant">OpenAI 相容端點</translation>
+    </string>
+    <string name="gboard_ai_bar_model">
+        <translation locale="en">Model ID</translation>
+        <translation locale="zh-Hant">模型 ID</translation>
+    </string>
+    <string name="gboard_ai_bar_model_summary">
+        <translation locale="en">Exactly as the provider names it. Buttons can override it.</translation>
+        <translation locale="zh-Hant">請完全依照服務商的名稱填寫。按鈕可另行指定。</translation>
+    </string>
+    <string name="gboard_ai_bar_endpoint">
+        <translation locale="en">Endpoint URL</translation>
+        <translation locale="zh-Hant">端點網址</translation>
+    </string>
+    <string name="gboard_ai_bar_endpoint_summary">
+        <translation locale="en">The part before /chat/completions, for example https://api.openai.com/v1</translation>
+        <translation locale="zh-Hant">/chat/completions 之前的部分，例如 https://api.openai.com/v1</translation>
+    </string>
+    <string name="gboard_ai_bar_endpoint_insecure">
+        <translation locale="en">Not encrypted: use http only for a server on your own network</translation>
+        <translation locale="zh-Hant">未加密：http 只適用於你自己網路中的伺服器</translation>
+    </string>
+    <string name="gboard_ai_bar_api_key">
+        <translation locale="en">API key</translation>
+        <translation locale="zh-Hant">API 金鑰</translation>
+    </string>
+    <string name="gboard_ai_bar_api_key_summary">
+        <translation locale="en">Stored encrypted with the Android Keystore. Never exported.</translation>
+        <translation locale="zh-Hant">以 Android Keystore 加密儲存，永不匯出。</translation>
+    </string>
+    <string name="gboard_ai_bar_api_key_hint">
+        <translation locale="en">Paste a new key, or leave empty to remove it</translation>
+        <translation locale="zh-Hant">貼上新的金鑰，留空則移除</translation>
+    </string>
+    <string name="gboard_ai_bar_api_key_failed">
+        <translation locale="en">Couldn\'t save the key</translation>
+        <translation locale="zh-Hant">無法儲存金鑰</translation>
+    </string>
+    <string name="gboard_ai_bar_saved">
+        <translation locale="en">Saved</translation>
+        <translation locale="zh-Hant">已儲存</translation>
+    </string>
+    <string name="gboard_ai_bar_not_set">
+        <translation locale="en">Not set</translation>
+        <translation locale="zh-Hant">未設定</translation>
+    </string>
+    <string name="gboard_ai_bar_none">
+        <translation locale="en">None</translation>
+        <translation locale="zh-Hant">無</translation>
+    </string>
+    <string name="gboard_ai_bar_test">
+        <translation locale="en">Test connection</translation>
+        <translation locale="zh-Hant">測試連線</translation>
+    </string>
+    <string name="gboard_ai_bar_test_summary">
+        <translation locale="en">Sends a tiny request with these settings.</translation>
+        <translation locale="zh-Hant">以目前設定傳送一個簡短的請求。</translation>
+    </string>
+    <string name="gboard_ai_bar_test_ok">
+        <translation locale="en">Connected. The model replied:</translation>
+        <translation locale="zh-Hant">連線成功。模型回覆：</translation>
+    </string>
+    <string name="gboard_ai_bar_add_button">
+        <translation locale="en">Add button</translation>
+        <translation locale="zh-Hant">新增按鈕</translation>
+    </string>
+    <string name="gboard_ai_bar_new_button">
+        <translation locale="en">New</translation>
+        <translation locale="zh-Hant">新按鈕</translation>
+    </string>
+    <string name="gboard_ai_bar_restart">
+        <translation locale="en">Restart keyboard</translation>
+        <translation locale="zh-Hant">重新啟動鍵盤</translation>
+    </string>
+    <string name="gboard_ai_bar_restart_summary">
+        <translation locale="en">Button changes show in the toolbar menu after the keyboard restarts. Drag them into the top row like any toolbar button.</translation>
+        <translation locale="zh-Hant">按鈕變更會在鍵盤重新啟動後出現在工具列選單，可像其他按鈕一樣拖曳到頂列。</translation>
+    </string>
+    <string name="gboard_ai_bar_reset_buttons">
+        <translation locale="en">Reset to default buttons</translation>
+        <translation locale="zh-Hant">重設為預設按鈕</translation>
+    </string>
+    <string name="gboard_ai_bar_reset_buttons_summary">
+        <translation locale="en">ES, FR, EN, Improve and ASK</translation>
+        <translation locale="zh-Hant">ES、FR、EN、Improve 與 ASK</translation>
+    </string>
+    <string name="gboard_ai_bar_reset_buttons_confirm">
+        <translation locale="en">This replaces your AI buttons with the five default ones.</translation>
+        <translation locale="zh-Hant">這會將你的 AI 按鈕換成五個預設按鈕。</translation>
+    </string>
+    <string name="gboard_ai_bar_button_title">
+        <translation locale="en">AI button</translation>
+        <translation locale="zh-Hant">AI 按鈕</translation>
+    </string>
+    <string name="gboard_ai_bar_button_deleted">
+        <translation locale="en">This button was deleted.</translation>
+        <translation locale="zh-Hant">此按鈕已刪除。</translation>
+    </string>
+    <string name="gboard_ai_bar_label">
+        <translation locale="en">Label</translation>
+        <translation locale="zh-Hant">標籤</translation>
+    </string>
+    <string name="gboard_ai_bar_label_summary">
+        <translation locale="en">Shown in the toolbar menu; one or two letters also become the icon.</translation>
+        <translation locale="zh-Hant">顯示於工具列選單；一或兩個字母也會成為圖示。</translation>
+    </string>
+    <string name="gboard_ai_bar_icon">
+        <translation locale="en">Icon</translation>
+        <translation locale="zh-Hant">圖示</translation>
+    </string>
+    <string name="gboard_ai_bar_icon_summary">
+        <translation locale="en">What the toolbar shows for this button.</translation>
+        <translation locale="zh-Hant">此按鈕在工具列上顯示的圖示。</translation>
+    </string>
+    <string name="gboard_ai_bar_icon_letters">
+        <translation locale="en">Letters from the label</translation>
+        <translation locale="zh-Hant">標籤中的字母</translation>
+    </string>
+    <string name="gboard_ai_bar_icon_wand">
+        <translation locale="en">Magic wand</translation>
+        <translation locale="zh-Hant">魔術棒</translation>
+    </string>
+    <string name="gboard_ai_bar_icon_sparkle">
+        <translation locale="en">Sparkle</translation>
+        <translation locale="zh-Hant">閃光</translation>
+    </string>
+    <string name="gboard_ai_bar_icon_question">
+        <translation locale="en">Question mark</translation>
+        <translation locale="zh-Hant">問號</translation>
+    </string>
+    <string name="gboard_ai_bar_icon_translate">
+        <translation locale="en">Translate</translation>
+        <translation locale="zh-Hant">翻譯</translation>
+    </string>
+    <string name="gboard_ai_bar_icon_lines">
+        <translation locale="en">Lines</translation>
+        <translation locale="zh-Hant">文字行</translation>
+    </string>
+    <string name="gboard_ai_bar_prompt">
+        <translation locale="en">Prompt</translation>
+        <translation locale="zh-Hant">提示詞</translation>
+    </string>
+    <string name="gboard_ai_bar_prompt_summary">
+        <translation locale="en">{text} is replaced by the selected text, or the whole field.</translation>
+        <translation locale="zh-Hant">{text} 會被替換成選取的文字，或整個欄位的內容。</translation>
+    </string>
+    <string name="gboard_ai_bar_result">
+        <translation locale="en">Result</translation>
+        <translation locale="zh-Hant">結果</translation>
+    </string>
+    <string name="gboard_ai_bar_mode_replace">
+        <translation locale="en">Replace text</translation>
+        <translation locale="zh-Hant">取代文字</translation>
+    </string>
+    <string name="gboard_ai_bar_mode_append">
+        <translation locale="en">Add below text</translation>
+        <translation locale="zh-Hant">加在文字下方</translation>
+    </string>
+    <string name="gboard_ai_bar_mode_popup">
+        <translation locale="en">Show in popup</translation>
+        <translation locale="zh-Hant">以彈出視窗顯示</translation>
+    </string>
+    <string name="gboard_ai_bar_model_override">
+        <translation locale="en">Model override</translation>
+        <translation locale="zh-Hant">指定模型</translation>
+    </string>
+    <string name="gboard_ai_bar_model_override_summary">
+        <translation locale="en">Leave empty to use the provider\'s model.</translation>
+        <translation locale="zh-Hant">留空則使用服務商的模型。</translation>
+    </string>
+    <string name="gboard_ai_bar_delete_button">
+        <translation locale="en">Delete button</translation>
+        <translation locale="zh-Hant">刪除按鈕</translation>
+    </string>
+    <string name="gboard_ai_bar_expand">
+        <translation locale="en">Expand shortcuts</translation>
+        <translation locale="zh-Hant">展開快捷鍵</translation>
+    </string>
+    <string name="gboard_ai_bar_expand_summary">
+        <translation locale="en">Type a trigger to replace it with its text.</translation>
+        <translation locale="zh-Hant">輸入觸發詞即可替換成對應的文字。</translation>
+    </string>
+    <string name="gboard_ai_bar_revert">
+        <translation locale="en">Revert on backspace</translation>
+        <translation locale="zh-Hant">退格還原</translation>
+    </string>
+    <string name="gboard_ai_bar_revert_summary">
+        <translation locale="en">Backspace right after an expansion brings the trigger back.</translation>
+        <translation locale="zh-Hant">展開後立即按退格鍵會還原觸發詞。</translation>
+    </string>
+    <string name="gboard_ai_bar_shortcuts">
+        <translation locale="en">Shortcuts</translation>
+        <translation locale="zh-Hant">快捷鍵</translation>
+    </string>
+    <string name="gboard_ai_bar_shortcuts_summary">
+        <translation locale="en">Trigger and the text it expands to</translation>
+        <translation locale="zh-Hant">觸發詞與展開的文字</translation>
+    </string>
+    <string name="gboard_ai_bar_add_shortcut">
+        <translation locale="en">Add shortcut</translation>
+        <translation locale="zh-Hant">新增快捷鍵</translation>
+    </string>
+    <string name="gboard_ai_bar_add_shortcut_summary">
+        <translation locale="en">A leading symbol, like ;addr, keeps it from matching normal words.</translation>
+        <translation locale="zh-Hant">以符號開頭（例如 ;addr）可避免與一般字詞衝突。</translation>
+    </string>
+    <string name="gboard_ai_bar_shortcut_title">
+        <translation locale="en">Shortcut</translation>
+        <translation locale="zh-Hant">快捷鍵</translation>
+    </string>
+    <string name="gboard_ai_bar_shortcut_deleted">
+        <translation locale="en">This shortcut was deleted.</translation>
+        <translation locale="zh-Hant">此快捷鍵已刪除。</translation>
+    </string>
+    <string name="gboard_ai_bar_trigger">
+        <translation locale="en">Trigger</translation>
+        <translation locale="zh-Hant">觸發詞</translation>
+    </string>
+    <string name="gboard_ai_bar_expansion">
+        <translation locale="en">Expands to</translation>
+        <translation locale="zh-Hant">展開為</translation>
+    </string>
+    <string name="gboard_ai_bar_expansion_summary">
+        <translation locale="en">Placeholders: {date} {time} {clipboard} {cursor}</translation>
+        <translation locale="zh-Hant">預留位置：{date} {time} {clipboard} {cursor}</translation>
+    </string>
+    <string name="gboard_ai_bar_when">
+        <translation locale="en">When to expand</translation>
+        <translation locale="zh-Hant">展開時機</translation>
+    </string>
+    <string name="gboard_ai_bar_when_immediately">
+        <translation locale="en">As soon as the trigger is typed</translation>
+        <translation locale="zh-Hant">輸入觸發詞後立即展開</translation>
+    </string>
+    <string name="gboard_ai_bar_when_delimiter">
+        <translation locale="en">After a space or punctuation</translation>
+        <translation locale="zh-Hant">輸入空格或標點後展開</translation>
+    </string>
+    <string name="gboard_ai_bar_delete_shortcut">
+        <translation locale="en">Delete shortcut</translation>
+        <translation locale="zh-Hant">刪除快捷鍵</translation>
+    </string>
+    <string name="gboard_ai_bar_excluded">
+        <translation locale="en">Don\'t expand in these apps</translation>
+        <translation locale="zh-Hant">不在這些 App 中展開</translation>
+    </string>
+    <string name="gboard_ai_bar_excluded_summary">
+        <translation locale="en">Package names, one per line</translation>
+        <translation locale="zh-Hant">套件名稱，每行一個</translation>
+    </string>
+    <string name="gboard_ai_bar_import">
+        <translation locale="en">Import AI Bar backup</translation>
+        <translation locale="zh-Hant">匯入 AI Bar 備份</translation>
+    </string>
+    <string name="gboard_ai_bar_import_summary">
+        <translation locale="en">A JSON export from the AI Bar app or this page. Only the sections in the file are replaced.</translation>
+        <translation locale="zh-Hant">AI Bar App 或此頁匯出的 JSON。只會取代檔案中包含的部分。</translation>
+    </string>
+    <string name="gboard_ai_bar_imported">
+        <translation locale="en">Imported:</translation>
+        <translation locale="zh-Hant">已匯入：</translation>
+    </string>
+    <string name="gboard_ai_bar_export">
+        <translation locale="en">Export</translation>
+        <translation locale="zh-Hant">匯出</translation>
+    </string>
+    <string name="gboard_ai_bar_export_summary">
+        <translation locale="en">Saves buttons, shortcuts and provider settings as JSON. API keys are never exported.</translation>
+        <translation locale="zh-Hant">將按鈕、快捷鍵與服務商設定存成 JSON。API 金鑰永不匯出。</translation>
+    </string>
 </settings-text>

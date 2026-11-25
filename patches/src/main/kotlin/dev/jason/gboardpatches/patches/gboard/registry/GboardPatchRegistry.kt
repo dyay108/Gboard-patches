@@ -2,6 +2,9 @@ package dev.jason.gboardpatches.patches.gboard.registry
 
 import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.Patch
+import dev.jason.gboardpatches.patches.gboard.features.aibar.gboardAiBarFeatureMarkerPatch
+import dev.jason.gboardpatches.patches.gboard.features.aibar.gboardAiBarLifecyclePatch
+import dev.jason.gboardpatches.patches.gboard.features.aibar.gboardAiBarResourcesPatch
 import dev.jason.gboardpatches.patches.gboard.features.editingaccesspoints.gboardEditingAccessPointsFeatureMarkerPatch
 import dev.jason.gboardpatches.patches.gboard.features.editingaccesspoints.gboardEditingAccessPointsLifecyclePatch
 import app.morphe.patcher.patch.ResourcePatchBuilder
@@ -243,6 +246,24 @@ val gboardEditingAccessPointsPatch = gboardPublicResourcePatch(
         gboardPatchesSettingsPatch,
         gboardEditingAccessPointsFeatureMarkerPatch,
         gboardEditingAccessPointsLifecyclePatch,
+        gboardAccessPointContributions1803Patch,
+    )
+}
+
+@Suppress("unused")
+val gboardAiBarPatch = gboardPublicResourcePatch(
+    featureId = "ai_bar",
+    name = "AI Bar",
+    description = "在工具列加入 AI 按鈕（翻譯、改寫、提問），並在輸入時展開文字快捷鍵。\n" +
+        "Add AI buttons (translate, improve, ask) to the toolbar and expand text shortcuts as you type.",
+    default = true,
+) {
+    compatibleWith(COMPATIBILITY_GBOARD)
+    dependsOn(
+        gboardPatchesSettingsPatch,
+        gboardAiBarFeatureMarkerPatch,
+        gboardAiBarResourcesPatch,
+        gboardAiBarLifecyclePatch,
         gboardAccessPointContributions1803Patch,
     )
 }
@@ -922,6 +943,7 @@ object GboardPublishedPatchCatalog {
         gboardManualIncognitoModePatch,
         gboardFloatingWebSearchPatch,
         gboardEditingAccessPointsPatch,
+        gboardAiBarPatch,
         gboardSimpleCalculatorPatch,
         gboardSwipeDismissPatch,
         gboardShiftDeletePatch,

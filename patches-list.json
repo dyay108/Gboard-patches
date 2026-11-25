@@ -2,6 +2,18 @@
   "version": "4.4.0",
   "patches": [
     {
+      "name": "AI Bar",
+      "description": "在工具列加入 AI 按鈕（翻譯、改寫、提問），並在輸入時展開文字快捷鍵。\nAdd AI buttons (translate, improve, ask) to the toolbar and expand text shortcuts as you type.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.google.android.inputmethod.latin": [
+          "18.5.4.993608717-release-arm64-v8a"
+        ]
+      },
+      "options": []
+    },
+    {
       "name": "AI Writing Tools",
       "description": "啟用 AI 撰寫工具，支援所有語言\nEnable AI writing tools with support for all languages.",
       "use": true,

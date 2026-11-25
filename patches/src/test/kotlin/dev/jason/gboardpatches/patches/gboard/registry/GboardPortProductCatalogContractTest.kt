@@ -673,6 +673,7 @@ class GboardPortProductCatalogContractTest {
             "access_points_menu_style" to "version-sensitive",
             "add_gboard_signature_bypass" to "version-sensitive",
             "advanced_voice_typing" to "version-sensitive",
+            "ai_bar" to "version-sensitive",
             "ai_writing_tools" to "version-sensitive",
             "backup_restore" to "version-neutral-extension",
             "change_emoji_size" to "version-sensitive",

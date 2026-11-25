@@ -57,6 +57,17 @@ Features designed and built by this project rather than simply unlocking an exis
 </details>
 
 <details>
+  <summary><code>AI Bar</code></summary>
+
+  Adds your own AI buttons to Gboard's toolbar, one per button. Each sends the field's text (or the selection) with your prompt to a model and either replaces the text, appends to it, or shows the answer in a card you can copy or insert. Replacements can be undone for a few seconds.
+
+  - Providers: Anthropic, or any OpenAI-compatible endpoint. There are no default models; you enter the model ID, base URL and API key. API keys are encrypted with an Android Keystore key.
+  - Text shortcuts: type a trigger such as `;sig` and it expands right away, or after a space or punctuation (`btw` → "by the way"). Placeholders `{date}`, `{time}`, `{clipboard}` and `{cursor}`. Backspace right after an expansion reverts it. Password fields and apps you exclude are skipped.
+  - Settings live in **Patches → Keyboard Tools & Shortcuts → AI Bar**, with import and export of backups (including AI Bar app JSON backups).
+  - Gboard blocks plain `http://`, so endpoints must use `https://`.
+</details>
+
+<details>
   <summary><code>Custom Theme</code></summary>
 
 Import custom ZIP themes and beautiful themes from the official Rboard repository.

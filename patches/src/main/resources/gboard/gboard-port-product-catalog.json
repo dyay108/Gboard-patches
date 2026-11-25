@@ -439,6 +439,61 @@
       ]
     },
     {
+      "feature_id": "ai_bar",
+      "public_patch_name": "AI Bar",
+      "feature_marker": "dev.jason.gboardpatches.feature.ai_bar",
+      "target_family_ids": [
+        "accesspoint.1803",
+        "editingaccesspoints",
+        "calculator.lifecycle"
+      ],
+      "migration_scope": "version-sensitive",
+      "consumer_files": [
+        "patches/src/main/kotlin/dev/jason/gboardpatches/patches/gboard/features/aibar/GboardAiBarFeatureMarkerPatch.kt",
+        "patches/src/main/kotlin/dev/jason/gboardpatches/patches/gboard/features/aibar/GboardAiBarLifecyclePatch.kt",
+        "patches/src/main/kotlin/dev/jason/gboardpatches/patches/gboard/features/aibar/GboardAiBarResourcesPatch.kt",
+        "patches/src/main/kotlin/dev/jason/gboardpatches/patches/gboard/features/aibar/GboardAiBarTargets.kt",
+        "patches/src/main/kotlin/dev/jason/gboardpatches/patches/gboard/registry/GboardPatchRegistry.kt",
+        "patches/src/main/kotlin/dev/jason/gboardpatches/patches/gboard/shared/accesspoint/GboardAccessPointContributionsPatch.kt",
+        "patches/src/main/kotlin/dev/jason/gboardpatches/patches/gboard/shared/accesspoint/GboardAccessPointContributionsTargets.kt"
+      ],
+      "contributions": [
+        {
+          "contribution_id": "ai_bar.runtime",
+          "anchor_family_id": "dedicated_bytecode",
+          "phase": "dedicated",
+          "order": 1265,
+          "required_bindings": [
+            "ap_catalog_copy",
+            "ap_controller_order_field",
+            "ap_descriptor_action",
+            "ap_descriptor_actions",
+            "ap_descriptor_build",
+            "ap_descriptor_factory",
+            "ap_descriptor_icon",
+            "ap_descriptor_label",
+            "ap_descriptor_register",
+            "ap_descriptor_token",
+            "ap_master_catalog_set",
+            "calculator_selection",
+            "editing_ap_ondestroy",
+            "editing_ap_onfinishinput",
+            "editing_ap_onfinishinputview",
+            "editing_ap_onstartinput",
+            "editing_ap_onstartinputview",
+            "editing_ap_onwindowhidden"
+          ],
+          "runtime_calls": [
+            "ACCESS_POINT_CONTRIBUTIONS_AFTER_CONTROLLER_CREATED",
+            "ACCESS_POINT_CONTRIBUTIONS_INCLUDE_ORDER_CATALOG",
+            "AI_BAR_START",
+            "AI_BAR_END",
+            "AI_BAR_SELECTION_UPDATED"
+          ]
+        }
+      ]
+    },
+    {
       "feature_id": "ai_writing_tools",
       "public_patch_name": "AI Writing Tools",
       "feature_marker": "dev.jason.gboardpatches.feature.ai_writing_tools",
